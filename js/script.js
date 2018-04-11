@@ -9,7 +9,7 @@ function getQuote() {
 $.ajaxSetup({ cache: false });
 
 function createTweet(input) {
-    var data = input[1];
+    var data = input[0];
     var quoteText = $(data.content).text().trim();
     var quoteAuthor = data.title;
     
